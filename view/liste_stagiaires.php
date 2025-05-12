@@ -23,8 +23,8 @@
                     <td><?= $stagiaire[2]?></td>
                     <td><?= $stagiaire[3]?></td>
                     <td><?= $stagiaire[4]?></td>
-                    <td><a href="index.php?action=edit & id=<?php echo $stagiaire[0];?>" class="btn btn-primary btn-sm"> Modifier</a>
-                    <a href="index.php?action=delete &id=<?php echo $stagiaire[0];?>" class="btn btn-danger btn-sm">Supprimer</a> 
+                    <td><a href="index.php?action=edit&id=<?php echo $stagiaire[0];?>" class="btn btn-primary btn-sm"> Modifier</a>
+                    <a href="index.php?action=supprimer&id=<?php echo $stagiaire[0];?>" class="btn btn-danger btn-sm">Supprimer</a> 
                     </td>
                 </tr>
             <?php endforeach;?>

@@ -1,6 +1,8 @@
 <?php
 require 'controller/stagiaire_controller.php';
-    if(isset($_Get['action'])){
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+    if(isset($_GET['action'])){
         $action=$_GET['action'];
         switch($action){
             case  'create':
@@ -25,6 +27,8 @@ require 'controller/stagiaire_controller.php';
                deleteAction();
             break;
         }
+    }else{
+        listeAction();
     }
     
     
